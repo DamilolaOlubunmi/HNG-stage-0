@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="profileCard.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <figure>
+      <img data-testid="test-user-avatar" src="https://i.pravatar.cc/150?img=12" alt="Damilola Olubunmi's avatar">
+    </figure>
+
+    <div>
+      <header>
+        <h2 data-testid="test-user-name">Akim Ravalid</h2>
+      </header>
+      <p data-testid="test-user-bio">
+        Passionate about networking, fullstack web development, and using technology to connect the world.
+      </p>
+      <p>Current Time (ms): <span data-testid="test-user-time" id = "time"></span></p>
+
+      <nav>
+        <ul data-testid="test-user-social-links">
+          <li><a data-testid="test-user-social-twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a data-testid="test-user-social-github" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a data-testid="test-user-social-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Playing violin</li>
+          <li>Exploring new tech</li>
+          <li>Cooking</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Unreliable networks</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+  <script src="profileCard.js"></script>
+</body>
+</html>
