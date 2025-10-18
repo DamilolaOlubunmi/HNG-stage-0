@@ -1,29 +1,69 @@
-# Profile Card — Minimal Frontend Widget
+# Interactive Profile Card
 
-A small, single-page profile card demo that shows a user avatar, name, bio, social links, hobbies/dislikes and a live current time (in milliseconds).
+A responsive, modern profile card implementation with real-time clock display and interactive elements.
 
-Files
-- [HNG Stage 0/profileCard.html](HNG Stage 0/profileCard.html) — Main HTML markup and test-friendly attributes (data-testid).
-- [HNG Stage 0/profileCard.css](HNG Stage 0/profileCard.css) — Styles: responsive, glass-like card layout.
-- [HNG Stage 0/profileCard.js](HNG Stage 0/profileCard.js) — Script that updates the clock.
+## Overview
 
-Key symbols
-- [`timeElement`](HNG Stage 0/profileCard.js) — DOM reference to the time <span>.
-- [`updateTime`](HNG Stage 0/profileCard.js) — Function that writes Date.now() into the time element and is invoked every second.
+This project creates a stylish profile card that displays:
+- User avatar
+- Name and bio
+- Real-time clock (updating every second in milliseconds)
+- Social media links (Twitter, GitHub, LinkedIn)
+- Personal details (Hobbies and Dislikes)
+- Interactive hover effects
 
-How it works (concise)
-- Open [profileCard.html](HNG Stage 0/profileCard.html) in a browser.
-- The layout and visual styling come from [profileCard.css](HNG Stage 0/profileCard.css).
-- The live clock is implemented in [profileCard.js](HNG Stage 0/profileCard.js): `updateTime` sets the element text to the current epoch milliseconds using `Date.now()` and `setInterval` calls it every 1000 ms.
+## Files Structure
 
-Run locally
-1. Place the three files together (already in this folder).
-2. Open [profileCard.html](HNG Stage 0/profileCard.html) in any modern browser (no build step or server required).
+- `index.html` - Main HTML structure with semantic markup and test attributes
+- `style.css` - Responsive styling with glass-morphism effect
+- `script.js` - JavaScript for real-time clock functionality
 
-Notes
-- HTML includes `data-testid` attributes to facilitate automated tests.
-- Styling uses simple responsive rules and a backdrop blur for a modern card look.
-- The time shown is in milliseconds (epoch) for demonstration; replace with formatted time if needed.
+## Features
 
-License / attribution
-- Small demo project intended for learning or portfolio use. Modify freely.
+- **Responsive Design**: Adapts seamlessly to different screen sizes
+- **Glass Morphism**: Modern UI with backdrop-filter blur effect
+- **Interactive Elements**: Hover animations on card and social links
+- **Real-time Updates**: Live clock display in milliseconds
+- **Accessible Markup**: Semantic HTML with proper ARIA attributes
+- **Test-Ready**: Includes data-testid attributes for automated testing
+
+## Technical Implementation
+
+### HTML
+- Semantic structure using `article`, `figure`, `nav`, and `section` elements
+- Test-friendly attributes (data-testid) for QA purposes
+- Responsive image handling with proper alt text
+
+### CSS
+- Flexbox layout for responsive design
+- Glass-morphism effect using backdrop-filter
+- Interactive hover states
+- Mobile-first responsive breakpoints
+- Custom color scheme with #7494fd as primary color
+
+### JavaScript
+- Real-time clock implementation using `Date.now()`
+- Interval-based updates every second
+- DOM manipulation using querySelector
+
+## Running Locally
+
+1. Clone or download the repository
+2. Open `index.html` in a modern web browser
+3. No build tools or server required
+
+## Browser Compatibility
+
+Requires modern browsers that support:
+- Backdrop-filter
+- Flexbox
+- CSS transitions
+- ES6 JavaScript
+
+## Testing
+
+The application includes data-testid attributes for automated testing implementation.
+
+## License
+
+Free to use and modify for personal and commercial projects.
